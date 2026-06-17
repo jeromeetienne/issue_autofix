@@ -1,0 +1,50 @@
+{
+	"name": "issue_autofix",
+	"version": "0.1.0",
+	"description": "Install the issue_autofix slash commands into a Claude Code agent folder",
+	"type": "module",
+	"bin": {
+		"issue_autofix": "dist/cli.js"
+	},
+	"files": [
+		"dist",
+		"commands",
+		"README.md"
+	],
+	"engines": {
+		"node": ">=20.12"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"dev": "tsx src/cli.ts",
+		"build": "tsc -p tsconfig.build.json",
+		"typecheck": "tsc --noEmit",
+		"prepare": "npm run build",
+		"publish:all": "npm run build && npm version patch && npm publish"
+	},
+	"author": {
+		"name": "Jerome Etienne",
+		"email": "jerome.etienne@gmail.com"
+	},
+	"homepage": "https://github.com/jeromeetienne/issue_autofix",
+	"repository": "https://github.com/jeromeetienne/issue_autofix",
+	"license": "MIT",
+	"keywords": [
+		"claude-code",
+		"github",
+		"issues",
+		"automation",
+		"autofix"
+	],
+	"dependencies": {
+		"chalk": "^5.3.0",
+		"commander": "^12.1.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.0",
+		"tsx": "^4.16.0",
+		"typescript": "^5.5.0"
+	}
+}

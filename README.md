@@ -74,6 +74,23 @@ clarified). See [Labels](#labels) below.
 
 ## Install
 
+### Quick install (npx)
+
+Copy the three commands into a project's `.claude/commands/` (or your user-level
+`~/.claude/commands/`) with one command — no clone, no manual copy:
+
+```bash
+# from npm (after publish)
+npx issue_autofix install .claude          # project-level → .claude/commands/
+npx issue_autofix install ~/.claude        # user-level    → ~/.claude/commands/
+
+# straight from GitHub, no publish needed
+npx github:jeromeetienne/issue_autofix install .claude
+```
+
+With no argument it defaults to `.claude` in the current directory. The commands then
+appear as `/issue_autofix`, `/issue_autofix_session`, and `/issue_autofix_validate`.
+
 ### As a plugin
 
 This plugin lives in a subfolder, so add it as a local marketplace after cloning:
