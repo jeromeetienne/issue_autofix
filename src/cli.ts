@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 import Fs from 'node:fs';
 import Path from 'node:path';
+import Url from 'node:url';
 import { Command } from 'commander';
 import Chalk from 'chalk';
 import { InstallCommand } from './commands/install_command.js';
 
 /** Read this package's version from its package.json, regardless of install layout. */
 function readVersion(): string {
-	const packageJsonPath = Path.join(import.meta.dirname, '..', 'package.json');
+	const moduleDir = Path.dirname(Url.fileURLToPath(import.meta.url));
+	const packageJsonPath = Path.join(moduleDir, '..', 'package.json');
 	const packageJson = JSON.parse(Fs.readFileSync(packageJsonPath, 'utf-8')) as { version?: string };
 	return typeof packageJson.version === 'string' ? packageJson.version : '0.0.0';
 }

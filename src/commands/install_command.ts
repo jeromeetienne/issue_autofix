@@ -1,5 +1,6 @@
 import Fs from 'node:fs';
 import Path from 'node:path';
+import Url from 'node:url';
 
 /** Outcome of copying a single command markdown file into the agent folder. */
 export type InstalledFile = {
@@ -22,7 +23,8 @@ export class InstallCommand {
 	 * @returns The destination directory and the per-file outcome.
 	 */
 	static async install(agentFolder: string): Promise<InstallResult> {
-		const sourceDir = Path.join(import.meta.dirname, '..', '..', 'commands');
+		const moduleDir = Path.dirname(Url.fileURLToPath(import.meta.url));
+		const sourceDir = Path.join(moduleDir, '..', '..', 'commands');
 		const destinationDir = Path.join(Path.resolve(agentFolder), 'commands');
 		const sourceFiles = Fs.readdirSync(sourceDir).filter((name) => name.endsWith('.md'));
 		if (sourceFiles.length === 0) {
