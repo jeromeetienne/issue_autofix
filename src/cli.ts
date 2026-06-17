@@ -22,7 +22,7 @@ async function main(): Promise<void> {
 	program
 		.command('install')
 		.description('Copy the issue_autofix commands into <agent_folder>/commands/')
-		.argument('[agent_folder]', 'Target .claude directory', '.claude')
+		.argument('[agent_folder]', 'Directory whose commands/ subfolder receives the files', '.')
 		.action(async (agentFolder: string) => {
 			const result = await InstallCommand.install(agentFolder);
 			for (const file of result.files) {
