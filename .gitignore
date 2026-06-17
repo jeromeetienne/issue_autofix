@@ -1,2 +1,8 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
+
+# Application-specific
+.issue_autofix/
