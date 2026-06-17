@@ -88,7 +88,7 @@ npx issue_autofix install ~/.claude        # user-level    → ~/.claude/command
 npx github:jeromeetienne/issue_autofix install .claude
 ```
 
-With no argument it defaults to `.claude` in the current directory. The commands then
+With no argument it installs into the current directory's `commands/`. The commands then
 appear as `/issue_autofix`, `/issue_autofix_session`, and `/issue_autofix_validate`.
 
 ### As a plugin
