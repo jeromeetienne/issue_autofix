@@ -9,7 +9,6 @@ never closes issues**: the maintainer reviews the PRs in the morning, and each P
 [![npm version](https://img.shields.io/npm/v/issue_autofix.svg)](https://www.npmjs.com/package/issue_autofix)
 [![downloads](https://img.shields.io/npm/dm/issue_autofix.svg)](https://www.npmjs.com/package/issue_autofix)
 [![license](https://img.shields.io/npm/l/issue_autofix.svg)](./LICENSE)
-[![build](https://github.com/jeromeetienne/issue_autofix/actions/workflows/ci.yml/badge.svg)](https://github.com/jeromeetienne/issue_autofix/actions)
 
 ## Commands
 
