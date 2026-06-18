@@ -1,6 +1,6 @@
 {
 	"name": "issue_autofix",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Install the issue_autofix slash commands into a Claude Code agent folder",
 	"type": "module",
 	"bin": {
