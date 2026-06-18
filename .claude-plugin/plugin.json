@@ -6,8 +6,8 @@
 		"name": "Jerome Etienne",
 		"email": "jerome.etienne@gmail.com"
 	},
-	"homepage": "https://github.com/jeromeetienne/ts_knowledge_graph/tree/main/contribs/issue_autofix",
-	"repository": "https://github.com/jeromeetienne/ts_knowledge_graph",
+	"homepage": "https://github.com/jeromeetienne/issue_autofix",
+	"repository": "https://github.com/jeromeetienne/issue_autofix",
 	"license": "MIT",
 	"keywords": [
 		"claude-code",

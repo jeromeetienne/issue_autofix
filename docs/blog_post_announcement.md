@@ -159,16 +159,10 @@ failed:   #18  support multiple languages         (checks failed)
 You need Claude Code, `git`, and the `gh` CLI authenticated (`gh auth status`)
 with push access to the target repository.
 
-Install it as a plugin from the local marketplace:
-
-```bash
-git clone https://github.com/jeromeetienne/ts_knowledge_graph
-```
-
-Then, in Claude Code:
+Install it as a plugin straight from GitHub, in Claude Code:
 
 ```
-/plugin marketplace add ./ts_knowledge_graph/contribs/issue_autofix
+/plugin marketplace add jeromeetienne/issue_autofix
 /plugin install issue_autofix@issue_autofix
 ```
 
@@ -176,8 +170,9 @@ Or copy the three command files into any project's `.claude/commands/` (or your
 user-level `~/.claude/commands/`):
 
 ```bash
+git clone https://github.com/jeromeetienne/issue_autofix
 mkdir -p .claude/commands
-cp ts_knowledge_graph/contribs/issue_autofix/commands/issue_autofix*.md .claude/commands/
+cp issue_autofix/commands/issue_autofix*.md .claude/commands/
 ```
 
 They then appear as `/issue_autofix`, `/issue_autofix_session`, and
@@ -198,5 +193,5 @@ ones you like.
 ---
 
 *`issue_autofix` is MIT-licensed and lives at
-[`contribs/issue_autofix`](https://github.com/jeromeetienne/ts_knowledge_graph/tree/main/contribs/issue_autofix)
-in the `ts_knowledge_graph` repository. © Jerome Etienne.*
+[`jeromeetienne/issue_autofix`](https://github.com/jeromeetienne/issue_autofix).
+© Jerome Etienne.*

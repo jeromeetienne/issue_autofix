@@ -61,9 +61,9 @@ gh issue view <number> --json title,body,comments
 ```
 
 Ground criterion 2 in the actual code rather than trusting the prose. When an issue
-names a file, symbol, or identifier, confirm it exists: this repository ships a code
-knowledge graph, so use the `code-graph-query` skill (or `git grep`) to check that the
-referenced files, functions, and types are real and to see what a change would touch.
+names a file, symbol, or identifier, confirm it exists: use `git grep` (or whatever
+code-search tooling the project provides) to check that the referenced files,
+functions, and types are real and to see what a change would touch.
 An issue that points at code that does not exist is **not** ready, however confident
 it reads.
 
@@ -190,8 +190,8 @@ queued issue (vetted `autofix-ready` or not yet validated) is fair game for
   `## Reported`, never delete it. Do not rewrite an already-ready issue's body, and
   never rewrite a body you are about to mark `autofix-needs-info`.
 - An issue is ready only if it passes all four rubric criteria; ground "locatable in
-  the code" against the actual repository (code knowledge graph or `git grep`), never
-  prose alone.
+  the code" against the actual repository (`git grep` or the project's code-search
+  tooling), never prose alone.
 - When an issue cannot be pinned down, leave it `autofix-needs-info` rather than guess
   — never invent scope the reporter did not ask for.
 - Follow the repository's `CLAUDE.md` conventions for any text you write into issues.

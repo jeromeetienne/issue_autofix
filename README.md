@@ -97,21 +97,24 @@ appear as `/issue_autofix`, `/issue_autofix_session`, and `/issue_autofix_valida
 
 ### As a plugin
 
-This plugin lives in a subfolder, so add it as a local marketplace after cloning:
-
-```bash
-git clone https://github.com/jeromeetienne/ts_knowledge_graph
-```
-
-Then, in Claude Code:
+The repository is itself a plugin marketplace, so add it directly with the GitHub
+shorthand in Claude Code:
 
 ```
-/plugin marketplace add ./ts_knowledge_graph/contribs/issue_autofix
+/plugin marketplace add jeromeetienne/issue_autofix
 /plugin install issue_autofix@issue_autofix
 ```
 
-> If you later host `contribs/issue_autofix/` as the root of its own repository,
-> the GitHub shorthand `/plugin marketplace add <owner>/<repo>` works directly.
+Or, to work from a local clone:
+
+```bash
+git clone https://github.com/jeromeetienne/issue_autofix
+```
+
+```
+/plugin marketplace add ./issue_autofix
+/plugin install issue_autofix@issue_autofix
+```
 
 ### Manually (copy-in)
 
@@ -120,7 +123,7 @@ user-level `~/.claude/commands/`):
 
 ```bash
 mkdir -p .claude/commands
-cp ts_knowledge_graph/contribs/issue_autofix/commands/issue_autofix*.md .claude/commands/
+cp issue_autofix/commands/issue_autofix*.md .claude/commands/
 ```
 
 They then appear as `/issue_autofix`, `/issue_autofix_session`, and
