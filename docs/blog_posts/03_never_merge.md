@@ -17,6 +17,8 @@ This post is about why that refusal is the most important engineering in the who
 system, and what it taught me about how trust in autonomous software actually gets
 built.
 
+![The machine reads the issue, writes the fix, passes your checks, and opens a pull request — then stops at the edge of consequence. The merge button stays yours.](03_never_merge.png)
+
 ## Trust is not a feeling you earn by being smart
 
 There's a tempting and wrong model of how to make an autonomous agent trustworthy: make

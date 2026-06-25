@@ -16,6 +16,8 @@ Here's the thing I want you to take away before we even start: when people say
 guarantee. The intelligence is rented. The trust is built. Let me show you two places
 where it gets built.
 
+![Two flexes: isolated runnable sandboxes provisioned and proven by a real run, and conflict-free pull requests that share no files and merge in any order.](02_engineering_an_overnight_agent.png)
+
 ## The problem with "it looks right"
 
 Start with the failure mode, because the whole design is a reaction to it.

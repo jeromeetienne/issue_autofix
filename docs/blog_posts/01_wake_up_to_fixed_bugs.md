@@ -26,6 +26,8 @@ shrinks while you sleep.
 That's the whole pitch. Let me show you how it feels to use, and then I'll tell you
 the one decision that makes it something you'd actually trust.
 
+![Label your easy bugs at night; wake up to a pull request for each one. File, label, sleep, review.](01_wake_up_to_fixed_bugs.png)
+
 ## The everyday loop
 
 Here's the entire workflow. There are no dashboards to learn and no new place to
@@ -61,6 +63,8 @@ human, which is to say, for you, when you have a minute.
 
 That's it. File, label, sleep, review. The interesting part isn't any single step —
 it's what the system refuses to do in between.
+
+![File, label, sleep, review workflow](01_wake_up_to_fixed_bugs.png)
 
 ## The twist that makes it usable
 
