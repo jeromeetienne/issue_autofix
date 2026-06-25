@@ -1,4 +1,4 @@
-# The engineering behind an agent you can leave running overnight
+# The Engineering Behind an Agent You Can Leave Running Overnight
 
 A one-shot "fix this bug" agent is a party trick. You paste an issue, a model writes a
 patch, it looks right, everyone claps. I've built that. You've probably built that. It
@@ -15,6 +15,8 @@ Here's the thing I want you to take away before we even start: when people say
 *environment the model runs in* so that a probabilistic core produces a deterministic
 guarantee. The intelligence is rented. The trust is built. Let me show you two places
 where it gets built.
+
+> The complete project is open source: [github.com/jeromeetienne/issue_autofix](https://github.com/jeromeetienne/issue_autofix).
 
 ![Two flexes: isolated runnable sandboxes provisioned and proven by a real run, and conflict-free pull requests that share no files and merge in any order.](02_engineering_an_overnight_agent.png)
 

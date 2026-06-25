@@ -1,4 +1,4 @@
-# Wake up to your easy bugs already fixed
+# Wake Up to Your Easy Bugs Already Fixed
 
 Every backlog has a graveyard.
 
@@ -25,6 +25,8 @@ shrinks while you sleep.
 
 That's the whole pitch. Let me show you how it feels to use, and then I'll tell you
 the one decision that makes it something you'd actually trust.
+
+> The complete project is open source: [github.com/jeromeetienne/issue_autofix](https://github.com/jeromeetienne/issue_autofix).
 
 ![Label your easy bugs at night; wake up to a pull request for each one. File, label, sleep, review.](01_wake_up_to_fixed_bugs.png)
 

@@ -1,4 +1,4 @@
-# Never merge: designing an autonomous agent you can actually trust
+# Never Merge: Designing an Autonomous Agent You Can Actually Trust
 
 The scariest sentence in AI tooling is four words long: *"and then it commits."*
 
@@ -16,6 +16,8 @@ design — one step short of the only action it can't take back.
 This post is about why that refusal is the most important engineering in the whole
 system, and what it taught me about how trust in autonomous software actually gets
 built.
+
+> The complete project is open source: [github.com/jeromeetienne/issue_autofix](https://github.com/jeromeetienne/issue_autofix).
 
 ![The machine reads the issue, writes the fix, passes your checks, and opens a pull request — then stops at the edge of consequence. The merge button stays yours.](03_never_merge.png)
 
