@@ -64,8 +64,6 @@ human, which is to say, for you, when you have a minute.
 That's it. File, label, sleep, review. The interesting part isn't any single step —
 it's what the system refuses to do in between.
 
-![File, label, sleep, review workflow](01_wake_up_to_fixed_bugs.png)
-
 ## The twist that makes it usable
 
 Here is the most important sentence in this whole project:
