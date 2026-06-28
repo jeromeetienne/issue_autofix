@@ -25,7 +25,7 @@ cd "$worktree"
 
 - `<slug>` is a short kebab-case form of the issue title.
 - The branch is `issue_autofix/<number>-<slug>` — the prefix the [conflict
-  check](/concepts/conflict_free_invariant.md) keys on.
+  check](conflict_free_invariant.md) keys on.
 - Branching from the `main` **ref** (not the working tree) means the primary
   checkout's state is irrelevant and there is no clash with the primary checkout
   already being on `main`.
@@ -61,7 +61,7 @@ git worktree prune
 On success the branch is kept (the pushed copy backs the pull request); on
 deferral or failure the branch is also deleted with `git branch -D`. A fresh
 worktree contains only tracked files, so it must be provisioned before its checks
-are trusted — see the [check gate](/concepts/check_gate.md).
+are trusted — see the [check gate](check_gate.md).
 
 # Citations
 

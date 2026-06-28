@@ -16,15 +16,15 @@ its issue on merge.
 
 ## How it holds across the commands
 
-- [/issue_autofix](/slash_commands/issue_autofix.md) — step 6 writes `Fixes
+- [/issue_autofix](../slash_commands/issue_autofix.md) — step 6 writes `Fixes
   #<number>` into the pull request body, the line that closes the issue **when the
   maintainer merges**. Step 7 adds only the `autofixed` label; it explicitly does
   not close the issue or merge the pull request.
-- [/issue_autofix_session](/slash_commands/issue_autofix_session.md) — states that
+- [/issue_autofix_session](../slash_commands/issue_autofix_session.md) — states that
   nothing is ever merged. To reject one, the maintainer closes its pull request;
   nothing else is affected, because of the
-  [conflict-free invariant](/concepts/conflict_free_invariant.md).
-- [/issue_autofix_validate](/slash_commands/issue_autofix_validate.md) — never even
+  [conflict-free invariant](conflict_free_invariant.md).
+- [/issue_autofix_validate](../slash_commands/issue_autofix_validate.md) — never even
   writes code: its only mutations are editing an issue body and adding a label.
 
 ## Why it is safe
@@ -32,7 +32,7 @@ its issue on merge.
 A human is always the last step before anything lands. Combined with the
 conflict-free invariant — open pull requests touch disjoint files — the maintainer
 can merge, reject, or reorder pull requests in any order without side effects. The
-[label lifecycle](/concepts/label_lifecycle.md) records state, but no label ever
+[label lifecycle](label_lifecycle.md) records state, but no label ever
 closes an issue; only a merged `Fixes #N` does.
 
 # Citations

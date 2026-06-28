@@ -19,13 +19,13 @@ CLI that copies those commands into a project, and as a Claude Code plugin.
 
 ## Folders
 
-- [slash_commands](/slash_commands/index.md) — the three Claude Code slash commands that do the work.
-- [cli](/cli/index.md) — the npx installer that copies the commands into a project or user agent folder.
-- [concepts](/concepts/index.md) — the cross-cutting ideas: the label state machine, the conflict-free invariant, worktree isolation, the check gate, and the never-merge guarantee.
-- [packaging](/packaging/index.md) — how the system is distributed: the npm package and the Claude Code plugin marketplace.
+- [slash_commands](slash_commands/index.md) — the three Claude Code slash commands that do the work.
+- [cli](cli/index.md) — the npx installer that copies the commands into a project or user agent folder.
+- [concepts](concepts/index.md) — the cross-cutting ideas: the label state machine, the conflict-free invariant, worktree isolation, the check gate, and the never-merge guarantee.
+- [packaging](packaging/index.md) — how the system is distributed: the npm package and the Claude Code plugin marketplace.
 
 ## Maintenance
 
 This bundle is derived from source. The folder-to-source mapping lives in
-`.okforge.config.json` at the repository root; see [log.md](/log.md) for the
+`.okforge.config.json` at the repository root; see [log.md](log.md) for the
 change history. Regenerate with the `okf` skill rather than hand-editing.

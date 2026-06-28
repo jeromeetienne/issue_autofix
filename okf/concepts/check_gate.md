@@ -10,8 +10,8 @@ timestamp: 2026-06-28
 # Check gate
 
 A pull request is opened only if the project's checks pass. This happens in step 5
-of [/issue_autofix](/slash_commands/issue_autofix.md). Because a fresh
-[worktree](/concepts/worktree_isolation.md) contains only tracked files, it must
+of [/issue_autofix](../slash_commands/issue_autofix.md). Because a fresh
+[worktree](worktree_isolation.md) contains only tracked files, it must
 be provisioned before any check result is trusted. The whole step is
 project-agnostic — it does not assume Node.
 
@@ -73,7 +73,7 @@ unverified fix is never shipped.
 | **Pass** | All discovered checks pass. | continue to the pull request | (later `autofixed`) |
 
 This distinction matters for the [label
-lifecycle](/concepts/label_lifecycle.md): a broken environment never earns
+lifecycle](label_lifecycle.md): a broken environment never earns
 `autofix-failed`, so a transient setup problem does not permanently mark a
 fixable issue as failed.
 

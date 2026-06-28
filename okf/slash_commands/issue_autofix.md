@@ -39,22 +39,22 @@ not ask the user questions mid-run. Every GitHub interaction uses the `gh` CLI.
 2. **Create an isolated worktree off main** — `git worktree add -b
    issue_autofix/<number>-<slug> <worktree> main`, under the git-ignored
    `.issue_autofix/worktrees/` directory. The primary checkout is never touched.
-   See [worktree isolation](/concepts/worktree_isolation.md).
+   See [worktree isolation](../concepts/worktree_isolation.md).
 3. **Comment the plan, then implement** — post a short plan comment on the issue
    (step 3a), then make the smallest correct fix under the worktree's absolute
    path (step 3b).
 4. **Conflict avoidance** — compare the files this fix touches against the files
    every other open `issue_autofix/*` pull request touches; on overlap, **defer**
    (discard the worktree and branch, leave the issue unlabelled). See the
-   [conflict-free invariant](/concepts/conflict_free_invariant.md).
+   [conflict-free invariant](../concepts/conflict_free_invariant.md).
 5. **Provision, then gate on checks** — copy local config/secrets, install
    dependencies from the manifests, confirm the worktree is runnable, then run the
-   project's discovered checks. See the [check gate](/concepts/check_gate.md).
+   project's discovered checks. See the [check gate](../concepts/check_gate.md).
 6. **Commit, push, open the pull request** — Conventional-Commits title, a
    `Fixes #<number>` body, base `main`, then remove the worktree.
 7. **Comment the result, then label** — comment the implementation with the pull
    request link (7a), then add the `autofixed` label (7b). See the
-   [label lifecycle](/concepts/label_lifecycle.md).
+   [label lifecycle](../concepts/label_lifecycle.md).
 8. **Report** — exactly one outcome (see below).
 
 ## Outcomes

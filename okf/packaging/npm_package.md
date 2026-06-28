@@ -9,7 +9,7 @@ timestamp: 2026-06-28
 
 # issue_autofix npm package
 
-The npm package wraps the [installer CLI](/cli/install.md) and the bundled command
+The npm package wraps the [installer CLI](../cli/install.md) and the bundled command
 files so a project can pull the commands in with a single `npx` invocation.
 
 ## Manifest

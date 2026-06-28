@@ -14,7 +14,7 @@ autofix pull request independently mergeable in any order — the maintainer can
 merge, reject, or reorder them freely.
 
 The invariant is enforced before testing, in step 4 of
-[/issue_autofix](/slash_commands/issue_autofix.md) ("Way A"). The fix is compared
+[/issue_autofix](../slash_commands/issue_autofix.md) ("Way A"). The fix is compared
 against every other open pull request whose branch starts with `issue_autofix/`.
 
 ## The check
@@ -46,9 +46,9 @@ overlapping file(s) and the pull request they belong to.
 
 In a session, the deferred number is held in the in-memory `deferred` set for the
 rest of the night so the loop does not retry the same conflict — see
-[/issue_autofix_session](/slash_commands/issue_autofix_session.md). Because a
+[/issue_autofix_session](../slash_commands/issue_autofix_session.md). Because a
 deferral leaves no label, the issue's place in the [label
-lifecycle](/concepts/label_lifecycle.md) is unchanged.
+lifecycle](label_lifecycle.md) is unchanged.
 
 # Citations
 

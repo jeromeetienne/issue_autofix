@@ -65,7 +65,7 @@ An issue is **autofix-ready** only if all four hold:
 | `autofix-ready` | Vetted; defined well enough to autofix. | Advisory — picked up the same as any queued issue. |
 | `autofix-needs-info` | Too underspecified; parked for the reporter. | Skipped until clarified and re-validated. |
 
-See the [label lifecycle](/concepts/label_lifecycle.md) for how these fit the
+See the [label lifecycle](../concepts/label_lifecycle.md) for how these fit the
 whole state machine.
 
 ## Invariants

@@ -10,7 +10,7 @@ timestamp: 2026-06-28
 # /issue_autofix_session
 
 Drives one night of autofixing. It hands the oldest eligible issue to
-[/issue_autofix](/slash_commands/issue_autofix.md), records the outcome, and moves
+[/issue_autofix](issue_autofix.md), records the outcome, and moves
 on until the queue is exhausted, then summarises. A failure or a conflict **never
 halts the run** — it is recorded and skipped.
 
@@ -49,7 +49,7 @@ Every iteration removes one issue from consideration — it is either labelled
 (`autofixed` / `autofix-failed`) or added to `deferred` — so the eligible set
 always shrinks and the loop is guaranteed to terminate. Tracking `deferred` for
 the whole night is what stops the loop spinning on the same conflict. See the
-[label lifecycle](/concepts/label_lifecycle.md).
+[label lifecycle](../concepts/label_lifecycle.md).
 
 ## Invariants
 

@@ -12,7 +12,7 @@ timestamp: 2026-06-28
 The single subcommand of the `issue_autofix` binary. It copies every bundled
 command markdown file into `<agent_folder>/commands/`. The binary is defined in
 `package.json` as `issue_autofix` → `dist/cli.js`; see the
-[npm package](/packaging/npm_package.md).
+[npm package](../packaging/npm_package.md).
 
 ## Usage
 

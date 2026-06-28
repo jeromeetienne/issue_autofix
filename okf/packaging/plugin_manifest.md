@@ -40,8 +40,8 @@ plugin entry:
 ```
 
 A local clone works the same way with `/plugin marketplace add ./issue_autofix`.
-Installing the plugin makes the three [slash commands](/slash_commands/index.md)
-available; it is the alternative to the [npm installer](/packaging/npm_package.md).
+Installing the plugin makes the three [slash commands](../slash_commands/index.md)
+available; it is the alternative to the [npm installer](npm_package.md).
 
 # Citations
 

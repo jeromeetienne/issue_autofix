@@ -18,10 +18,10 @@ from GitHub state on every run — no external database.
 | Label | Meaning | Created by |
 | --- | --- | --- |
 | `autofix` | Queue this issue to be fixed. | The maintainer (by hand). |
-| `autofixed` | A pull request is open and awaiting review. | [/issue_autofix](/slash_commands/issue_autofix.md) step 7. |
-| `autofix-failed` | The checks ran and failed; needs a human. | [/issue_autofix](/slash_commands/issue_autofix.md) step 5d. |
-| `autofix-ready` | Vetted by the validator. Advisory — not required to be picked up. | [/issue_autofix_validate](/slash_commands/issue_autofix_validate.md) step 6. |
-| `autofix-needs-info` | Too underspecified; parked and skipped until clarified. | [/issue_autofix_validate](/slash_commands/issue_autofix_validate.md) step 6. |
+| `autofixed` | A pull request is open and awaiting review. | [/issue_autofix](../slash_commands/issue_autofix.md) step 7. |
+| `autofix-failed` | The checks ran and failed; needs a human. | [/issue_autofix](../slash_commands/issue_autofix.md) step 5d. |
+| `autofix-ready` | Vetted by the validator. Advisory — not required to be picked up. | [/issue_autofix_validate](../slash_commands/issue_autofix_validate.md) step 6. |
+| `autofix-needs-info` | Too underspecified; parked and skipped until clarified. | [/issue_autofix_validate](../slash_commands/issue_autofix_validate.md) step 6. |
 
 The colours and descriptions are set on first use via
 `gh label create ... 2>/dev/null || true`, so the commands are idempotent on a
@@ -45,12 +45,12 @@ looks at issues not yet vetted.
 
 - `autofix` → `autofixed` — a pull request was opened (success).
 - `autofix` → `autofix-failed` — a check ran and reported a real failure.
-- `autofix` → (no label change) — **deferred** for a [conflict](/concepts/conflict_free_invariant.md), or **could-not-provision** for a broken environment. The issue stays plain `autofix` so a later night retries it cleanly.
+- `autofix` → (no label change) — **deferred** for a [conflict](conflict_free_invariant.md), or **could-not-provision** for a broken environment. The issue stays plain `autofix` so a later night retries it cleanly.
 - `autofix` → `autofix-ready` or `autofix-needs-info` — applied only by the optional validator.
 
 Because a deferral and a provisioning failure leave no label, re-selection is by
 label and never by comments; an issue that merely carries a plan comment is still
-eligible. See the [never-merge guarantee](/concepts/never_merge.md): no label here
+eligible. See the [never-merge guarantee](never_merge.md): no label here
 ever closes an issue — only a merged pull request's `Fixes #N` does that.
 
 # Citations
