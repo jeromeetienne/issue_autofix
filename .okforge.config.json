@@ -1,0 +1,8 @@
+{
+	"folders": {
+		"slash_commands": ["commands/"],
+		"cli": ["src/"],
+		"concepts": ["README.md", "commands/"],
+		"packaging": ["package.json", ".claude-plugin/"]
+	}
+}
